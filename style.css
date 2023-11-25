@@ -1,0 +1,56 @@
+#gameWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#playerLocalWrapper {
+    grid-column: 1/4;
+    grid-row: 1;
+    border: 2px solid red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#playerTwoWrapper {
+    grid-column: 1;
+    grid-row: 2;
+    border: 2px solid blue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#playerThreeWrapper {
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid green;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#playerFourWrapper {
+    grid-column: 3;
+    grid-row: 2;
+    border: 2px solid orange;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+canvas {
+    margin: auto;
+    background-color: black;
+    width: 100%;
+    max-width: 33vw;
+    max-height: 33vh;
+}
+
+canvas#playerLocalCanvas {
+    width: 100%;
+    max-width: 50vw;
+    max-height: 57vh;
+}
